@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: white;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hamburger {
+    position: absolute; 
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .playlist {
+    position: absolute;
+    top: 0;
+    left: -220px;
+    width: 200px;
+    height: 100%;
+    background: #2b2b2b;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+  .playlist.open {
+    left: 0;
+  }
+  
+  .playlist-item {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .playlist-item:hover {
+    background: #3a3a3a;
+  }
+  
+  .playlist-item.active {
+    background: #444;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .player {
+    margin: auto;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .controls button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background: #666;
+  }
+  #progress {
+    width: 30%;
+    margin: 20px auto;
+    height: 5px;
+    background: #444;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .poster {
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+      
